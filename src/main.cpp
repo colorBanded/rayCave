@@ -25,6 +25,7 @@ void Render(const Camera3D &camera, GameState gameState);
 
 int main() {
     InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "3Djunk");
+    SetExitKey(KEY_NULL); // Prevent ESC from closing window
     SetTargetFPS(60);
 
     DisableCursor(); // Lock cursor at startup
