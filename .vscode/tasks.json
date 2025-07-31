@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build raylib",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "src/main.cpp",
+                "-o",
+                "build/rayCave",
+                "-I${workspaceFolder}/include",
+                "-I${workspaceFolder}/include/FastNoise",
+                "-I/opt/homebrew/include",
+                "-L/opt/homebrew/lib",
+                "-L${workspaceFolder}/lib",
+                "-lraylib",
+                "-lFastNoise",
+                "-framework",
+                "IOKit",
+                "-framework",
+                "Cocoa",
+                "-framework",
+                "OpenGL"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "./build/rayCave",
+            "dependsOn": ["build raylib"],
+            "group": "none"
+        },
+        {
+            "label": "build and run",
+            "type": "shell",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "build raylib",
+                "run"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
