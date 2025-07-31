@@ -5,6 +5,11 @@
 #include <unordered_map>
 #include <cmath>
 
+// Game state enumeration
+enum GameState {
+    GAMEPLAY,
+    PAUSED
+};
 
 // Constants
 constexpr int SCREEN_WIDTH = 1280;
@@ -86,5 +91,16 @@ void Render(const Camera3D &camera, GameState gameState) {
     // Always draw HUD
     DrawFPS(10, 10);
     DrawText("Simple Voxel (WASD + Mouse)", 10, 30, 20, DARKGRAY);
+
+    // Draw pause overlay if paused
+    if (gameState == PAUSED) {
+        DrawRectangle(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT, Fade(BLACK, 0.5f));
+
+        const char* pausedText = "PAUSED";
+        int fontSize = 60;
+        int textWidth = MeasureText(pausedText, fontSize);
+        DrawText(pausedText, (SCREEN_WIDTH - textWidth) / 2, SCREEN_HEIGHT / 2 - fontSize / 2, fontSize, RAYWHITE);
+    }
+
     EndDrawing();
 }
