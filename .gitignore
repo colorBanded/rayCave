@@ -42,3 +42,13 @@
 
 *.DS_Store
 .DS_Store
+
+assets/textures/blocks/*
+assets/textures/gui/*
+assets/textures/items/*
+world
+
+.vscode/tasks.json
+
+build/rayCave
+

@@ -1,0 +1,44 @@
+{
+  "biomes": [
+    {
+      "name": "plains",
+      "displayName": "Plains",
+      "temperature": 0.8,
+      "humidity": 0.4,
+      "surfaceBlock": "grass",
+      "subsurfaceBlock": "dirt",
+      "stoneBlock": "stone",
+      "tintColor": [154, 205, 50, 255]
+    },
+    {
+      "name": "forest",
+      "displayName": "Forest",
+      "temperature": 0.7,
+      "humidity": 0.8,
+      "surfaceBlock": "grass",
+      "subsurfaceBlock": "dirt",
+      "stoneBlock": "stone",
+      "tintColor": [34, 139, 34, 255]
+    },
+    {
+      "name": "mountains",
+      "displayName": "Mountains",
+      "temperature": 0.2,
+      "humidity": 0.3,
+      "surfaceBlock": "stone",
+      "subsurfaceBlock": "stone",
+      "stoneBlock": "stone",
+      "tintColor": [139, 137, 137, 255]
+    },
+    {
+      "name": "desert",
+      "displayName": "Desert",
+      "temperature": 2.0,
+      "humidity": 0.0,
+      "surfaceBlock": "dirt",
+      "subsurfaceBlock": "dirt",
+      "stoneBlock": "stone",
+      "tintColor": [238, 203, 173, 255]
+    }
+  ]
+}

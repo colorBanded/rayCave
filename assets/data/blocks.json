@@ -1,0 +1,136 @@
+{
+  "blocks": [
+    {
+      "id": 0,
+      "name": "air",
+      "displayName": "Air",
+      "transparent": true,
+      "liquid": false,
+      "flammable": false,
+      "breakable": false,
+      "emitsLight": false,
+      "hardness": 0.0,
+      "lightLevel": 0,
+      "soundGroup": "none",
+      "toolRequired": "none",
+      "textures": {
+        "all": "air"
+      },
+      "tintColor": [0, 0, 0, 0]
+    },
+    {
+      "id": 1,
+      "name": "grass",
+      "displayName": "Grass Block",
+      "transparent": false,
+      "liquid": false,
+      "flammable": true,
+      "breakable": true,
+      "emitsLight": false,
+      "hardness": 0.6,
+      "lightLevel": 0,
+      "soundGroup": "grass",
+      "toolRequired": "shovel",
+      "textures": {
+        "top": "grass_top",
+        "bottom": "dirt",
+        "side": "grass_side",
+        "all": "grass_side"
+      },
+      "tintColor": [124, 252, 0, 255]
+    },
+    {
+      "id": 2,
+      "name": "dirt",
+      "displayName": "Dirt",
+      "transparent": false,
+      "liquid": false,
+      "flammable": false,
+      "breakable": true,
+      "emitsLight": false,
+      "hardness": 0.5,
+      "lightLevel": 0,
+      "soundGroup": "gravel",
+      "toolRequired": "shovel",
+      "textures": {
+        "all": "dirt"
+      },
+      "tintColor": [160, 82, 45, 255]
+    },
+    {
+      "id": 3,
+      "name": "stone",
+      "displayName": "Stone",
+      "transparent": false,
+      "liquid": false,
+      "flammable": false,
+      "breakable": true,
+      "emitsLight": false,
+      "hardness": 1.5,
+      "lightLevel": 0,
+      "soundGroup": "stone",
+      "toolRequired": "pickaxe",
+      "textures": {
+        "all": "stone"
+      },
+      "tintColor": [128, 128, 128, 255]
+    },
+    {
+      "id": 4,
+      "name": "wood",
+      "displayName": "Oak Log",
+      "transparent": false,
+      "liquid": false,
+      "flammable": true,
+      "breakable": true,
+      "emitsLight": false,
+      "hardness": 2.0,
+      "lightLevel": 0,
+      "soundGroup": "wood",
+      "toolRequired": "axe",
+      "textures": {
+        "top": "log_oak_top",
+        "bottom": "log_oak_top",
+        "side": "log_oak",
+        "all": "log_oak"
+      },
+      "tintColor": [139, 69, 19, 255]
+    },
+    {
+      "id": 5,
+      "name": "cobblestone",
+      "displayName": "Cobblestone",
+      "transparent": false,
+      "liquid": false,
+      "flammable": false,
+      "breakable": true,
+      "emitsLight": false,
+      "hardness": 2.0,
+      "lightLevel": 0,
+      "soundGroup": "stone",
+      "toolRequired": "pickaxe",
+      "textures": {
+        "all": "cobblestone"
+      },
+      "tintColor": [105, 105, 105, 255]
+    },
+    {
+      "id": 13,
+      "name": "bedrock",
+      "displayName": "Bedrock",
+      "transparent": false,
+      "liquid": false,
+      "flammable": false,
+      "breakable": false,
+      "emitsLight": false,
+      "hardness": -1.0,
+      "lightLevel": 0,
+      "soundGroup": "stone",
+      "toolRequired": "none",
+      "textures": {
+        "all": "bedrock"
+      },
+      "tintColor": [84, 84, 84, 255]
+    }
+  ]
+}

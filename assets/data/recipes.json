@@ -1,0 +1,28 @@
+{
+  "recipes": [
+    {
+      "name": "planks_from_wood",
+      "result": {
+        "block": "wood",
+        "count": 4
+      },
+      "pattern": [
+        ["wood"]
+      ],
+      "type": "shapeless"
+    },
+    {
+      "name": "cobblestone_ring",
+      "result": {
+        "block": "cobblestone",
+        "count": 8
+      },
+      "pattern": [
+        ["stone", "stone", "stone"],
+        ["stone", "", "stone"],
+        ["stone", "stone", "stone"]
+      ],
+      "type": "shaped"
+    }
+  ]
+}
